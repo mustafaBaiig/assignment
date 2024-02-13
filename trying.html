@@ -1,0 +1,184 @@
+<html lang="en">
+<head>
+<style>
+    body{
+        background-image: url("pizza-web-banner-with-copy-space-generative-ai-free-photo.jpg");
+        padding: 0%;
+        margin:0%;
+        
+    }
+ .main{
+    color: rgb(21, 20, 20);
+    font-style: initial;
+   
+    background-color: #fce9b5;
+    opacity: 40%;
+
+ }  
+ .main :hover{
+     background-color: blue; 
+ } 
+ .laabels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    
+    
+ }
+ .labels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width:48%;
+     padding-left: 6%;
+     margin-bottom: 4px;
+   
+    
+ }
+.right{
+    display: flex;
+    gap:3%;
+    padding-right:3%;
+    width: 48%;
+    margin-bottom: 7%;
+
+}
+.flavour
+{
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bolder;
+}
+.Extras{
+    margin-top: 2%;
+}
+.instructions {
+    padding-left: 4%;
+
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part1 label:hover{
+    font-weight: 200;
+  background-color:#fce9b5;
+  border-radius: 13px;
+  font-size: 1.2rem;
+  
+}
+input{
+    opacity: 40%;
+}
+textarea{
+    opacity: 40%;
+}
+.required {
+            color: red;
+            font-weight: bold;
+        }
+
+</style>
+    
+</head>
+<body style="background-color: beige;">
+    <br>
+<h1 style="text-align: center; font-family: 'Courier New', Courier, monospace ;" class="main">Pizza Max </h1>  
+<form action="buttons.html" method="post">
+<div class="laabels">
+<div class="labels">
+<div class="part1">
+<label for="valueInput"><span class="required">*</span>Name:</label>
+<br><br>
+<label for="valueInput"><span class="required">*</span>Number:</label>
+<br><br>
+<label for="valueInput"><span class="required">*</span>City:</label>
+<br><br>
+<label for="valueInput"><span class="required">*</span>PostCode:</label>
+</div>
+<div style="margin-bottom: 1%;" class="part2;">
+
+<input  type="text" id="valueInput" name="valueInput" required> 
+<br><br>
+<input type="text" id="valueInput" name="valueInput"required>
+<br><br>
+<input type="text" id="valueInput" name="valueInput"required>
+<br><br>
+<input type="text" id="valueInput" name="valueInput"required>
+
+</div>
+</div>
+
+<div class="right">
+    <div class="part1">
+    <label for="valueInput"><span class="required" >*</span>Address:</label>
+    <br><br>
+    <label for="valueInput"><span class="required">*</span>Email:</label>
+     
+    </div>
+    <div class="part2">
+        <input type="text" id="valueInput" name="valueInput"required>
+        <br><br>
+        <input type="email" id="valueInput" name="valueInput"required>
+         
+    </div>
+</div>
+
+
+ 
+</div>
+
+<p style="text-align: center;">* field required</p>
+<div class="flavour">
+<div class="topping">
+    <h3>Topping</h3>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Margherita</label><br>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Four Seasons</label><br>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Meat Feast</label><br>
+</div>
+
+<div class="Size">
+    <h3>Size</h3>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Small</label><br>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Medium</label><br>
+    <input type="radio" id="valueInput" name="valueInput">
+    <label for="valueInput">Large</label><br>
+</div>
+<div class="Extras">
+    <h3>Extras</h3>
+    <input type="checkbox" id="valueInput" name="valueInput">
+    <label for="valueInput">Mushrooms</label><br>
+    <input type="checkbox" id="valueInput" name="valueInput">
+    <label for="valueInput">Green Peppers</label><br>
+    <input type="checkbox" id="valueInput" name="valueInput">
+    <label for="valueInput">Anchovies</label><br>
+    <input type="checkbox" id="valueInput" name="valueInput">
+    <label for="valueInput">Extra cheese</label><br>
+</div><br>
+</div><br>
+<div style="text-align: center;" class="time">
+    <label for="valueInput">Preferred Delivery Time :</label>
+    <input type="time" id="valueInput" name="valueInput"><br>
+
+   
+</div><br>
+<div style="text-align: center;padding-left: 16px;"  class="time">
+    <label for="valueInput">Delivery instructions :</label>
+    <textarea style="padding-right: 1%;" id="deliveryInstructions" name="deliveryInstructions" rows="2" cols="8"></textarea>
+</div><br>
+<input style="margin-left: 600px; cursor: pointer;" type="submit" value="submit-order">
+
+</form>
+
+</body>
+</html>
